@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius:5px ;
+}
+.signin-div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    height: 600px;
+}
+
+.signinform{
+    width: 50%;
+    margin: 0 auto;
+   box-shadow: 0px 0px 10px grey;
+    height: 300px;
+    padding: 20px;
+}
+.signinform input{
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    border:1px solid grey;
+}
+
+.signinform label{
+    margin: 20px auto;
+    width: 80%;
+}
+.signinform button{
+    background-color: #0e73b7;
+    color: white;
+    border: 2px solid #0e73b7;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    padding: 10px 30px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.signinform button:hover{
+    border: 2px solid #0e73b7;
+    background-color: white;
+    color: #0e73b7;
+    transition: 0.5s ease;
+    padding: 10px 30px;
+}
+.signin-hr{
+    margin: 10px;
+}
+.logo{
+   width: 360px;
+   margin: 0 auto;
+   display: block;
+}
+.signup-here{
+    text-align: center;
+}
+.logo-header{
+    display: none;
+}
+
+@media screen and (max-width:1024px) {
+    .signinform{
+        width: 70%;
+        margin: 0 auto;
+       box-shadow: 0px 0px 10px grey;
+        height: 300px;
+        padding: 20px;
+    }
+    .signin-div{
+        height: 550px;
+    }
+}
+@media screen and (max-width:425px) {
+    .col-2{
+       display: none;
+    }
+    .signin-div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto ;
+        height: 200px;
+        align-items: center;
+    }
+    .signinform{
+        width: 70%;
+    }
+    .logo-header{
+        display: block;
+    }
+    .header-logo{
+        width: 140px;
+        display: block;
+        margin: 0 auto;
+    }
+}
